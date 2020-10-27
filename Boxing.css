@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+}
+.banner.active {
+    right: 300px;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+.toggle.active {
+    background: url(close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #00f , #f00);
+    mix-blend-mode: overlay;
+}
+.text {
+    position: relative;
+    z-index: 10;
+}
+.text h2 {
+    font-size: 6em;
+    font-weight: 800;
+    color: white;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    color: white;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.text p {
+    font-size: 1.1em;
+    position: relative;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+    color: white;
+}
+.text a {
+    display: inline-block;
+    font-size: 1.1em;
+    background: white;
+    padding: 10px 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 10; */
+    background: #fff;
+}
+.menu ul {
+    position: relative;
+}
+.menu ul li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    margin: 60px 23px;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+@media (max-width:991px)
+{
+    section,
+    section header {
+        padding: 40px;
+    }
+    .test {
+        margin-left: 500px;
+    }
+    .test h2{
+        font-size: 3em;
+    }
+    .test h3{
+        font-size: 2em;
+    }
+}
+
+@media (max-width:813px)
+{
+    section,
+    section header {
+        padding: 12px;
+    }
+    .test h2{
+        font-size: 2em;
+    }
+    .test h3{
+        font-size: 1em;
+    }
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+}

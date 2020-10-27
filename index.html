@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AP - Learn Boxing With AP Fitness</title>
+    <link rel="stylesheet" href="Boxing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">service</a></li>
+            <li><a href="#">Team</a></li> 
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <h2 class="logo">SKITCH BOXING</h2>
+            <div class="toggle" onclick="togglemenu();"></div>
+        </header>
+        <video src="bg1.mp4" muted loop autoplay></video>
+        <!-- <img src="1.jpg" alt="background"> -->
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Be Stronger</h2>
+            <h3>Never give up</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam aut omnis sed eligendi ipsum similique 
+                consectetur! Dignissimos, suscipit corporis quia sapiente doloribus 
+                dolores eaque cumque porro. Eum iusto ducimus ratione facilis.</p>
+                <a href="#">Join us</a>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+    function togglemenu(){
+        var menutoggle = document.querySelector('.toggle');
+        var banner = document.querySelector('.banner');
+        menutoggle.classList.toggle('active');
+        banner.classList.toggle('active');
+    }
+    </script>
+</body>
+
+
+</html>
+
